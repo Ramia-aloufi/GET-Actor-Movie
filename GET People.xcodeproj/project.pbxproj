@@ -43,6 +43,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11EDC3782775184800B30978 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11EE2860277353A900BF2281 /* ApiManager.swift */,
+				11EE28622773546C00BF2281 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11EDC3792775188800B30978 /* Conroller */ = {
+			isa = PBXGroup;
+			children = (
+				11EE284E2773466300BF2281 /* ViewController.swift */,
+				11EE285E2773524E00BF2281 /* FilmTableViewController.swift */,
+			);
+			path = Conroller;
+			sourceTree = "<group>";
+		};
+		11EDC37A277518CB00B30978 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11EE28502773466400BF2281 /* Main.storyboard */,
+				11EE28552773466700BF2281 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11EDC37B277518E100B30978 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				11EE284A2773466300BF2281 /* AppDelegate.swift */,
+				11EE284C2773466300BF2281 /* SceneDelegate.swift */,
+				11EE28532773466700BF2281 /* Assets.xcassets */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		11EE283E2773466300BF2281 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +99,11 @@
 		11EE28492773466300BF2281 /* GET People */ = {
 			isa = PBXGroup;
 			children = (
-				11EE284A2773466300BF2281 /* AppDelegate.swift */,
-				11EE284C2773466300BF2281 /* SceneDelegate.swift */,
-				11EE284E2773466300BF2281 /* ViewController.swift */,
-				11EE28502773466400BF2281 /* Main.storyboard */,
-				11EE28532773466700BF2281 /* Assets.xcassets */,
-				11EE28552773466700BF2281 /* LaunchScreen.storyboard */,
+				11EDC37B277518E100B30978 /* Other */,
+				11EDC3792775188800B30978 /* Conroller */,
+				11EDC37A277518CB00B30978 /* View */,
 				11EE28582773466700BF2281 /* Info.plist */,
-				11EE285E2773524E00BF2281 /* FilmTableViewController.swift */,
-				11EE2860277353A900BF2281 /* ApiManager.swift */,
-				11EE28622773546C00BF2281 /* Model.swift */,
+				11EDC3782775184800B30978 /* Model */,
 			);
 			path = "GET People";
 			sourceTree = "<group>";
