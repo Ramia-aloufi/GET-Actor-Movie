@@ -18,10 +18,7 @@ class FilmTableViewController: UITableViewController {
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-                
             }
-            
-            // Do any additional setup after loading the view.
         }
         
         override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,7 +30,17 @@ class FilmTableViewController: UITableViewController {
             cell.textLabel?.text = films[indexPath.row].title
             return cell
         }
-    //
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let DetailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        let array = [
+            films[indexPath.row].title,
+            films[indexPath.row].releaseDate,
+            films[indexPath.row].director,
+            films[indexPath.row].openingCrawl
+        ]
+        DetailVC.array = array
+        navigationController?.pushViewController(DetailVC, animated: true)
+    }
        
 
 

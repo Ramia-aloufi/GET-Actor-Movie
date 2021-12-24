@@ -22,7 +22,7 @@ struct Result:Codable {
     let gender: String
     let homeworld: String
     let films, species, vehicles, starships: [String]
-    let created, edited: String
+    let created, edited,birth_year: String
     let url: String
 }
 

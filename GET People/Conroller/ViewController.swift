@@ -32,7 +32,19 @@ var names = [Result]()
         cell.textLabel?.text = names[indexPath.row].name
         return cell
     }
-//
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let DetailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        let array = [
+            names[indexPath.row].name,
+            names[indexPath.row].gender,
+            names[indexPath.row].birth_year,
+            names[indexPath.row].mass
+        ]
+        
+        
+        DetailVC.array = array
+        navigationController?.pushViewController(DetailVC, animated: true)
+    }
    
 
 
